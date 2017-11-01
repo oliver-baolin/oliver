@@ -1,11 +1,13 @@
 package cn.itcast.core.bean;
 
+import java.io.Serializable;
+
 /**
  * 测试test表
  * @author Zhang
  *
  */
-public class TestTb {
+public class TestTb implements Serializable{
 
 	private Integer id;
 	private String name;

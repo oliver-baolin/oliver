@@ -12,7 +12,7 @@ import cn.itcast.core.dao.TestTbDao;
  * @author Zhang
  *
  */
-@Service
+@Service("testTbService")
 @Transactional
 public class TestTbServiceImpl implements TestTbService{
 
@@ -21,7 +21,6 @@ public class TestTbServiceImpl implements TestTbService{
 	
 	public void testTb(TestTb t) {
 		testTbDao.insertTestTb(t);
-		throw new RuntimeException();
 	}
 	
 	
