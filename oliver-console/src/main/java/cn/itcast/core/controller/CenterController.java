@@ -20,11 +20,16 @@ public class CenterController {
 	@Autowired
 	private TestTbService testTbService;
 	
+	/**
+	 * 测试类
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value="/index.do")
 	public String test(Model model) {
 		
 		TestTb t = new TestTb();
-		t.setName("zhangbaolin");
+		t.setName("oliver");
 		t.setAge(12);
 		testTbService.testTb(t);
 		
