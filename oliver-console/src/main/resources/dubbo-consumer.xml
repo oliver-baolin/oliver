@@ -28,4 +28,7 @@
 		<!-- 3.调用此接口对应实现类 id的值为@Autowired的别名-->
 		<dubbo:reference interface="cn.itcast.core.service.TestTbService" id="testTbService"/>
 		
+		<!-- 设置全局超时时间  单位是毫秒 10分钟-->
+		<dubbo:consumer timeout="600000"/>
+		
 </beans>
